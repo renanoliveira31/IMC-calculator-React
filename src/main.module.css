@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        margin: 0 auto; 
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .h1{
+        font-size: 26px;
+    }
+    
+    .inputField {
+        padding: 0.5em;
+        align-items: center;
+        display: flex; 
+    }
+
+    .resultTable {
+        width: 70%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .formContainer {
+        margin: 5px auto; 
+    }
+
+    .inputField {
+        padding: 0.3em; 
+        align-items: center;
+        display: flex;
+    }
+
+    .resultTable {
+        width: 100%; 
+    }
+
+    .h1{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+.formContainer {
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px;
+    width: 50%;
+    height: 100vh;
+}
+
+.h1 {
+    margin-bottom: 20px;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.inputField {
+    margin-bottom: 10px;
+    padding: 1em;
+    text-align: center;
+}
+
+.resultTable {
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: 30%; 
+}
+
+.resultTable th,
+.resultTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.resultTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
